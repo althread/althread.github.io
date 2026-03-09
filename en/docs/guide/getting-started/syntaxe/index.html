@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">Althread Syntax | Althread</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://althread.github.io/en/docs/guide/getting-started/syntaxe"><meta data-rh="true" property="og:locale" content="en_GB"><meta data-rh="true" property="og:locale:alternate" content="fr_FR"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Althread Syntax | Althread"><meta data-rh="true" name="description" content="Althread&#x27;s syntax is designed to be as intuitive as possible. It is inspired by C and Rust, which allows for quick adoption and focuses on concepts rather than syntax."><meta data-rh="true" property="og:description" content="Althread&#x27;s syntax is designed to be as intuitive as possible. It is inspired by C and Rust, which allows for quick adoption and focuses on concepts rather than syntax."><link data-rh="true" rel="icon" href="/en/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://althread.github.io/en/docs/guide/getting-started/syntaxe"><link data-rh="true" rel="alternate" href="https://althread.github.io/en/docs/guide/getting-started/syntaxe" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://althread.github.io/docs/guide/getting-started/syntaxe" hreflang="fr-FR"><link data-rh="true" rel="alternate" href="https://althread.github.io/docs/guide/getting-started/syntaxe" hreflang="x-default"><link rel="stylesheet" href="/en/assets/css/styles.f3fb780f.css">
-<script src="/en/assets/js/runtime~main.cf545a80.js" defer="defer"></script>
+<script src="/en/assets/js/runtime~main.22310997.js" defer="defer"></script>
 <script src="/en/assets/js/main.23371499.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -73,7 +73,7 @@ See the <a href="/en/docs/api/lists">list methods reference</a> for complete doc
 <p>An atomic expression is the smallest unit of execution. In Althread, there are 6 types of atomic expressions:</p>
 <ul>
 <li><strong>Declaration</strong>: <code>let x = 5;</code></li>
-<li><strong>Assignment</strong>: <code>x = 5;</code>, <code>x++;</code>, <code>x += 1</code>;</li>
+<li><strong>Assignment</strong>: <code>x = 5;</code>, <code>x += 1</code> (<code>+=</code> is only allowed for local variables);</li>
 <li><strong>Arithmetic Operation</strong>: <code>x + y;</code>, <code>x - y;</code>, <code>x * y;</code>, <code>x / y;</code>, <code>x % y;</code></li>
 <li><strong>Atomic Scope</strong>: <code>atomic { ... }</code></li>
 <li><strong>Function Call</strong>: <code>print(&quot;Hello world&quot;);</code>, <code>await x == 5;</code></li>

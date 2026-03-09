@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">Syntaxe d&#x27;Althread | Althread</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://althread.github.io/docs/guide/getting-started/syntaxe"><meta data-rh="true" property="og:locale" content="fr_FR"><meta data-rh="true" property="og:locale:alternate" content="en_GB"><meta data-rh="true" name="docusaurus_locale" content="fr"><meta data-rh="true" name="docsearch:language" content="fr"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Syntaxe d&#x27;Althread | Althread"><meta data-rh="true" name="description" content="La syntaxe d&#x27;althread est faite pour être la plus intuitive possible. Elle est inspirée du langage C et du Rust, ce qui permet de la prendre en main rapidement et de se concentrer sur les concepts plutôt que sur la syntaxe."><meta data-rh="true" property="og:description" content="La syntaxe d&#x27;althread est faite pour être la plus intuitive possible. Elle est inspirée du langage C et du Rust, ce qui permet de la prendre en main rapidement et de se concentrer sur les concepts plutôt que sur la syntaxe."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://althread.github.io/docs/guide/getting-started/syntaxe"><link data-rh="true" rel="alternate" href="https://althread.github.io/en/docs/guide/getting-started/syntaxe" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://althread.github.io/docs/guide/getting-started/syntaxe" hreflang="fr-FR"><link data-rh="true" rel="alternate" href="https://althread.github.io/docs/guide/getting-started/syntaxe" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.f3fb780f.css">
-<script src="/assets/js/runtime~main.21fecf08.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f69a3d61.js" defer="defer"></script>
 <script src="/assets/js/main.48ea0da8.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -73,7 +73,7 @@ Consultez la <a href="/docs/api/lists">référence des méthodes de listes</a> p
 <p>Une expression atomique est la plus petite unité d&#x27;exécution. En althread, il existe 6 types d&#x27;expressions atomiques :</p>
 <ul>
 <li><strong>Déclaration</strong> : <code>let x = 5;</code></li>
-<li><strong>Affectation</strong> : <code>x = 5;</code>,  <code>x++;</code>, <code>x += 1</code>;</li>
+<li><strong>Affectation</strong> : <code>x = 5;</code>, <code>x += 1</code> (<code>+=</code> est autorisée uniquement pour les variables locales);</li>
 <li><strong>Opération arithmétique</strong> : <code>x + y;</code>, <code>x - y;</code>, <code>x * y;</code>, <code>x / y;</code>, <code>x % y;</code></li>
 <li><strong>Scope atomique</strong>: <code>atomic { ... }</code></li>
 <li><strong>Appel de fonction</strong> : <code>print(&quot;Hello world&quot;);</code>, <code>await x == 5;</code></li>
